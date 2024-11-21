@@ -565,7 +565,7 @@ textarea::-ms-input-placeholder{
 }
 @media only screen and (min-width: 0px) and (max-width: 1278px) {
 .dbdash-smenu {
-	width: 240px !important;
+	width: 270px !important;
 	transform: translateX(-100%);
 }
 .dbdash-smenu .dbdash-logo__icon{
@@ -631,7 +631,7 @@ textarea::-ms-input-placeholder{
 	display:inline-block;
 }
 .dbdash-smenu.dbdash-close .dbdash-menu-icon {
-	margin-right:14px !important;
+	margin-right:5px !important;
 }
 .dbdash-smenu.dbdash-close .primary {
 	padding: 0;
@@ -2720,6 +2720,7 @@ object {
 		right: 2%;
 	}
 }
+
 @media only screen and (min-width: 1279px) and (max-width: 1550px) {
 
     .dbdash-smenu {
@@ -2747,6 +2748,9 @@ object {
   .dbdash-sidebar-padding{
     padding-left:20px !important;
   }
+    .dbdash-smenu.dbdash-close .admin-menu .admin-menu__inside .dbdash-sidebar-padding .menu-bar ul li a span.dropdown-arrow {
+      display: none;
+    }
 }
 @media only screen and (max-width: 991px) {
 

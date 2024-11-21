@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleIcon.classList.add('fa-eye');
         }
     };
-    
+
     if (toggleIcon) {
         toggleIcon.addEventListener('click', togglePassword);
     }
@@ -69,7 +69,7 @@ dashboard_side?.addEventListener("click", () => {
 // Add event listener for .dashboard-options__default click if dashboard_default is found
 dashboard_default?.addEventListener("click", () => {
     cs_action.forEach((el) => {
-        el.classList.remove("dbdash-close");
+      el.classList.remove("dbdash-close");
     });
     localStorage.setItem("iscicon", false);
     crancy_body_area?.classList.remove("dbdash-body-area-hractive"); // Added optional chaining to handle null crancy_body_area
@@ -83,7 +83,7 @@ dashboard_horizontal?.addEventListener("click", () => {
 // Check localStorage on page load
 if (localStorage.getItem("iscicon") === "true") {
     cs_action.forEach((el) => {
-        el.classList.add("dbdash-close");
+      el.classList.add("dbdash-close");
     });
 }
 
@@ -92,17 +92,17 @@ jQuery(document).ready(function($) {
 
     $('#dbdash-header__nav,.dbdash-sidebarmenu__close').on( "click", function(){
         $('.dbdash-sidebarmenu').toggleClass('active');
-    });	
+    });
 
     $('.dbdash-filters-button').on( "click", function(){
         $('.dbdash-table-filter-tables').toggleClass('active');
-    });	
+    });
     /*====================================
         Select2 JS
-    ======================================*/ 
+    ======================================*/
     $('select').niceSelect();
 
-	
+
 });
 
 
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     crancyDropdowns.forEach((crancyDropdown, index) => {
         const observer = new MutationObserver(function(mutationsList) {
             const crancyDropdownHasShowClass = crancyDropdown.classList.contains("show");
-            
+
             document.querySelectorAll(".admin-menu").forEach((adminMenuOne) => {
                 adminMenuOne.classList.toggle("no-overflow", crancyDropdownHasShowClass);
             });
@@ -178,10 +178,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener("DOMContentLoaded", function () {
     var fullscreenBtn = document.querySelector('.dbdash-header__single--zoom');
-    
+
     fullscreenBtn.addEventListener('click', function () {
         var dashboard = document.querySelector('body');
-        
+
         if (!document.fullscreenElement) {
             if (dashboard.requestFullscreen) {
                 dashboard.requestFullscreen();
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
         actionElement.addEventListener('click', () => {
             // Toggle the 'active' class on the ".customer-action-info__popup" element within the same parent
             const popupElement = actionElement.querySelector('.customer-action-info__popup');
-            
+
             // Check if the popup is active, then remove the class, else add the class
             if (popupElement.classList.contains('active')) {
                 popupElement.classList.remove('active');
@@ -255,17 +255,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function toggleDropdown(event) {
   event.preventDefault();
-  
+
   // Toggle the active class on the dropdown menu
   const dropdownMenu = event.currentTarget.nextElementSibling;
   dropdownMenu.classList.toggle("active");
-  
+
   // Toggle the rotation on the arrow icon
   const arrow = event.currentTarget.querySelector(".dropdown-arrow");
   arrow.classList.toggle("rotate");
 }
 
 
-
+// this code for dropdown icon fixed::
 
 
