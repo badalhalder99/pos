@@ -249,6 +249,736 @@
     </header>
     <!-- End Header -->
 
+    <!-- pos screen body code start -->
+     <section class="pos-body-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="pos-select-products">
+              <div class="pos-select-products__info">
+                <div class="pos-select-products__group">
+                  <select style="display: none;">
+                    <option data-display="Select Brand">Select Brand</option>
+                    <option value="One Panama">One Panama</option>
+                    <option value="Grey Fires">Grey Fires</option>
+                  </select>
+                  <div class="nice-select" tabindex="0"><span class="current">Select Brand</span>
+                    <ul class="list">
+                      <li data-value="Select Brand" data-display="Select Brand" class="option selected">Select Brand</li>
+                      <li data-value="One Panama" class="option">One Panama</li>
+                      <li data-value="Grey Fires" class="option">Grey Fires</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pos-select-products__group">
+                  <select style="display: none;">
+                    <option data-display="Select Category">Select Category</option>
+                    <option value="Gift Product">Gift Product</option>
+                    <option value="Clothing Item">Clothing Item</option>
+                  </select>
+                  <div class="nice-select" tabindex="0"><span class="current">Select Category</span>
+                    <ul class="list">
+                      <li data-value="Select Category" data-display="Select Category" class="option selected">Select Category</li>
+                      <li data-value="Gift Product" class="option">Gift Product</li>
+                      <li data-value="Clothing Item" class="option">Clothing Item</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pos-product-list">
+                <!-- Single Product -->
+                <div class="pos-product-list__single">
+                  <label class="custom-control-label">
+                    <img src="img/product-1.png" alt="#" class="img-fluid">
+                  </label>
+                  <p>In stock: <span>5</span></p>
+                  <h4>Birthday Cake</h4>
+                </div>
+                <!-- Single Product -->
+                <div class="pos-product-list__single">
+                  <label class="custom-control-label">
+                    <img src="img/product-1.png" alt="#" class="img-fluid">
+                  </label>
+                  <p class="stock-out-text">Stock Out</p>
+                  <h4>Birthday Cake</h4>
+                </div>
+                <!-- Single Product -->
+                <div class="pos-product-list__single" id="single-card">
+                  <input type="checkbox" class="pos-product-list__input" id="pd1">
+                  <label class="custom-control-label" for="pd1">
+                    <img src="img/product-1.png" alt="#" class="img-fluid">
+                  </label>
+                  <p>In stock: <span>5</span></p>
+                  <h4>Birthday Cake</h4>
+                </div>
+
+
+
+
+              </div>
+              <div class="pos-product-list">
+                <div class="pos-screen-bottom__load">
+                  <a href="#">Load More</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="rewards-info">
+              <!-- Single Rewards -->
+              <div class="rewards-info__single">
+                <!-- Rewards Label -->
+                <div class="rewards-info__label">
+                  <div class="rewards-info__heading">
+                    <h4 class="rewards-info__title">Reward point:</h4>
+                  </div>
+                  <div class="rewards-info__input">
+                    <input type="text" placeholder="190">
+                  </div>
+                </div>
+                <!-- Rewards Label -->
+                <div class="rewards-info__main">
+                  <div class="rewards-info__type">
+                    <h4 class="rewards-info__title"><img src="img/person_book.svg"> Customers</h4>
+                  </div>
+                  <div class="rewards-info__group">
+                    <select style="display: none;">
+                      <option data-display="walk-in-customer">walk-in-customer</option>
+                      <option value="Default Customers">Default Customers</option>
+                    </select>
+                    <div class="nice-select" tabindex="0"><span class="current">walk-in-customer</span>
+                      <ul class="list">
+                        <li data-value="walk-in-customer" data-display="walk-in-customer" class="option selected">walk-in-customer
+                        </li>
+                        <li data-value="Default Customers" class="option">Default Customers</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="rewards-info__plus">
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Single Rewards -->
+              <div class="rewards-info__single">
+                <!-- Rewards Label -->
+                <div class="rewards-info__label">
+                  <div class="rewards-info__heading">
+                    <h4 class="rewards-info__title">Stock quantity:</h4>
+                  </div>
+                  <div class="rewards-info__input">
+                    <input type="text" placeholder="190 KG">
+                  </div>
+                </div>
+                <!-- Rewards Label -->
+                <div class="rewards-info__main">
+                  <div class="rewards-info__type">
+                    <h4 class="rewards-info__title"><img src="img/barcode_scanner.svg"></h4>
+                  </div>
+                  <div class="rewards-info__group">
+                    <select style="display: none;">
+                      <option data-display="Scan barcode/Enter product name">Scan barcode/Enter product name</option>
+                      <option value="Scan barcode/Enter product name">Search With Manually product name</option>
+                    </select>
+                    <div class="nice-select" tabindex="0"><span class="current">Scan barcode/Enter product name</span>
+                      <ul class="list">
+                        <li data-value="Scan barcode/Enter product name" data-display="Scan barcode/Enter product name"
+                          class="option selected">Scan barcode/Enter product name</li>
+                        <li data-value="Scan barcode/Enter product name" class="option">Search With Manually product name</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="rewards-info__plus">
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="table-main-area table-main-area__v2 table-main-area__pos mg-top-20">
+              <div class="table-main-area__body">
+                <!-- crancy Table -->
+                <table id="dbdash-table__main" class="dbdash-table__main m-0">
+                  <!-- crancy Table Head -->
+                  <thead class="dbdash-table__head">
+                    <tr>
+                      <th class="dbdash-table__column-1 dbdash-table__h1">S.L</th>
+                      <th class="dbdash-table__column-2 dbdash-table__h2"><span>Product Name </span></th>
+                      <th class="dbdash-table__column-3 dbdash-table__h3"><span>Qty/Weight </span></th>
+                      <th class="dbdash-table__column-4 dbdash-table__h5"><span>Unit</span></th>
+                      <th class="dbdash-table__column-5 dbdash-table__h6"><span>Price.Inc.Tax</span></th>
+                      <th class="dbdash-table__column-6 dbdash-table__h7"><span>Subtotal</span></th>
+                      <th class="dbdash-table__column-7 dbdash-table__h8"><span>Delete</span></th>
+                    </tr>
+                  </thead>
+                  <!-- crancy Table Body -->
+                  <tbody class="dbdash-table__body">
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">01</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">02</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">03</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">04</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">05</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">06</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">07</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">08</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">09</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">10</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">11</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="dbdash-table__column-1 dbdash-table__data-1">
+                        <h4 class="dbdash-table__product-title">12</h4>
+                      </td>
+                      <td class="dbdash-table__column-2 dbdash-table__data-2">
+                        <h4 class="dbdash-table__product-title">Outdoor Backpack Mini Bags</h4>
+                      </td>
+                      <td class="dbdash-table__column-3 dbdash-table__data-3">
+                        <!-- Input Order -->
+                        <div class="input-group dbdash-input-group">
+                          <div class="button minus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[1]">
+                              <img src="img/icon-minus.svg">
+                            </button>
+                          </div>
+                          <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1">
+                          <div class="button plus">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[1]">
+                              <img src="img/icon-plus.svg">
+                            </button>
+                          </div>
+                        </div>
+                        <!--/ End Input Order -->
+                      </td>
+                      <td class="dbdash-table__column-4 dbdash-table__data-4">
+                        <h4 class="dbdash-table__product-title">Piece</h4>
+                      </td>
+                      <td class="dbdash-table__column-5 dbdash-table__data-5">
+                        <h4 class="dbdash-table__product-title">1025.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-6 dbdash-table__data-6">
+                        <h4 class="dbdash-table__product-title">1225.00</h4>
+                      </td>
+                      <td class="dbdash-table__column-7 dbdash-table__data-7">
+                        <a href="#"><img src="img/delete-icon2.svg"></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <!-- End crancy Table Body -->
+                </table>
+                <!-- End crancy Table -->
+
+                <div class="pos-screen-bottom">
+                  <div class="pos-screen-bottom__load">
+                    <a href="#">Load More</a>
+                  </div>
+                  <div class="pos-screen-bottom__inside">
+                    <ul class="pos-screen-bottom__list">
+                      <li>Total Item: <span>14</span></li>
+                      <li>Total Unit: <span>14</span></li>
+                      <li>Total: <span>14580 TK.</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pos-screen-cashbox">
+              <div class="pos-screen-cashbox__one">
+                <!-- Pos Field -->
+                <div class="pos-screen-cashbox__field">
+                  <!-- Pos Single -->
+                  <div class="pos-screen-cashbox__single">
+                    <div class="pos-screen-cashbox__label">
+                      <p>Discount Type:</p>
+                    </div>
+                    <div class="pos-screen-cashbox__info">
+                      <div class="pos-screen-cashbox__group">
+                        <div class="pos-screen-cashbox__group--select">
+                          <select style="display: none;">
+                            <option data-display="Fixed">Fixed</option>
+                            <option value="Fixed">Fixed</option>
+                          </select>
+                          <div class="nice-select" tabindex="0"><span class="current">Fixed</span>
+                            <ul class="list">
+                              <li data-value="Fixed" data-display="Fixed" class="option selected">Fixed</li>
+                              <li data-value="Fixed" class="option">Fixed</li>
+                            </ul>
+                          </div>
+                          <input type="text" placeholder="50.00">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pos Single -->
+                  <div class="pos-screen-cashbox__single">
+                    <div class="pos-screen-cashbox__label">
+                      <p>Vat/Tax Type:</p>
+                    </div>
+                    <div class="pos-screen-cashbox__info">
+                      <div class="pos-screen-cashbox__group">
+                        <div class="pos-screen-cashbox__group--select">
+                          <select style="display: none;">
+                            <option data-display="VAT @ 10%">VAT @ 10%</option>
+                            <option value="VAT @ 10%">VAT @ 10%</option>
+                          </select>
+                          <div class="nice-select" tabindex="0"><span class="current">VAT @ 10%</span>
+                            <ul class="list">
+                              <li data-value="VAT @ 10%" data-display="VAT @ 10%" class="option selected">VAT @ 10%</li>
+                              <li data-value="VAT @ 10%" class="option">VAT @ 10%</li>
+                            </ul>
+                          </div>
+                          <input type="text" placeholder="500.55">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pos Single -->
+                  <div class="pos-screen-cashbox__single">
+                    <div class="pos-screen-cashbox__label">
+                      <p>Grand Total:</p>
+                    </div>
+                    <div class="pos-screen-cashbox__info">
+                      <input type="text" placeholder="15200.00">
+                    </div>
+                  </div>
+                  <!-- Pos Single -->
+                  <div class="pos-screen-cashbox__single">
+                    <div class="pos-screen-cashbox__label">
+                      <p>Received :</p>
+                    </div>
+                    <div class="pos-screen-cashbox__info">
+                      <input type="text" placeholder="00.00">
+                    </div>
+                  </div>
+                  <!-- Pos Single -->
+                  <div class="pos-screen-cashbox__single">
+                    <div class="pos-screen-cashbox__label">
+                      <p>Change:</p>
+                    </div>
+                    <div class="pos-screen-cashbox__info">
+                      <input type="text" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <!-- End Pos Field -->
+                <div class="pos-screen-cashbox__button">
+                  <button type="submit">Cash</button>
+                </div>
+              </div>
+              <div class="pos-screen-cashbox__two">
+                <div class="pos-screen-cashbox__btn-group">
+                  <a class="pos-screen-cashbox__btn pos-screen-cashbox__btn__cancel" href="#">Cancel</a>
+                  <a class="pos-screen-cashbox__btn" href="#">Draft <img src="img/page-edit.svg"></a>
+                  <a class="pos-screen-cashbox__btn" href="#">Redeem point</a>
+                  <a class="pos-screen-cashbox__btn" href="#">Membership</a>
+                  <a class="pos-screen-cashbox__btn pos-screen-cashbox__btn-multiple" href="#">Multiple Pay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- pos screen body code end -->
+
 		<!--  Scripts -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-migrate.js"></script>

@@ -266,6 +266,21 @@ function toggleDropdown(event) {
 }
 
 
-// this code for dropdown icon fixed::
+// this code for pos screen::
+
+const checkbox = document.getElementById('pd1');
+const singleCard = document.getElementById('single-card');
+
+singleCard.addEventListener('click', function () {
+  if (checkbox.checked) {
+    checkbox.style.visibility = "visible"
+    checkbox.style.opacity = "1"
+  } else if(!checkbox.checked) {
+    checkbox.style.visibility = "hidden"
+    checkbox.style.opacity = "0"
+  } else {
+    console.log('Nothing to do')
+  }
+})
 
 
