@@ -284,3 +284,4 @@ singleCard.addEventListener('click', function () {
 })
 
 
+// My name is Badal Halder::
