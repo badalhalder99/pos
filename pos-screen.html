@@ -709,98 +709,67 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="pos-screen-cashbox">
-              <div class="pos-screen-cashbox__one">
-                <!-- Pos Field -->
-                <div class="pos-screen-cashbox__field">
-                  <!-- Pos Single -->
-                  <div class="pos-screen-cashbox__single">
-                    <div class="pos-screen-cashbox__label">
-                      <p>Discount Type:</p>
-                    </div>
-                    <div class="pos-screen-cashbox__info">
-                      <div class="pos-screen-cashbox__group">
-                        <div class="pos-screen-cashbox__group--select">
-                          <select style="display: none;">
-                            <option data-display="Fixed">Fixed</option>
-                            <option value="Fixed">Fixed</option>
-                          </select>
-                          <div class="nice-select" tabindex="0"><span class="current">Fixed</span>
-                            <ul class="list">
-                              <li data-value="Fixed" data-display="Fixed" class="option selected">Fixed</li>
-                              <li data-value="Fixed" class="option">Fixed</li>
-                            </ul>
-                          </div>
-                          <input type="text" placeholder="50.00">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Pos Single -->
-                  <div class="pos-screen-cashbox__single">
-                    <div class="pos-screen-cashbox__label">
-                      <p>Vat/Tax Type:</p>
-                    </div>
-                    <div class="pos-screen-cashbox__info">
-                      <div class="pos-screen-cashbox__group">
-                        <div class="pos-screen-cashbox__group--select">
-                          <select style="display: none;">
-                            <option data-display="VAT @ 10%">VAT @ 10%</option>
-                            <option value="VAT @ 10%">VAT @ 10%</option>
-                          </select>
-                          <div class="nice-select" tabindex="0"><span class="current">VAT @ 10%</span>
-                            <ul class="list">
-                              <li data-value="VAT @ 10%" data-display="VAT @ 10%" class="option selected">VAT @ 10%</li>
-                              <li data-value="VAT @ 10%" class="option">VAT @ 10%</li>
-                            </ul>
-                          </div>
-                          <input type="text" placeholder="500.55">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Pos Single -->
-                  <div class="pos-screen-cashbox__single">
-                    <div class="pos-screen-cashbox__label">
-                      <p>Grand Total:</p>
-                    </div>
-                    <div class="pos-screen-cashbox__info">
-                      <input type="text" placeholder="15200.00">
-                    </div>
-                  </div>
-                  <!-- Pos Single -->
-                  <div class="pos-screen-cashbox__single">
-                    <div class="pos-screen-cashbox__label">
-                      <p>Received :</p>
-                    </div>
-                    <div class="pos-screen-cashbox__info">
-                      <input type="text" placeholder="00.00">
-                    </div>
-                  </div>
-                  <!-- Pos Single -->
-                  <div class="pos-screen-cashbox__single">
-                    <div class="pos-screen-cashbox__label">
-                      <p>Change:</p>
-                    </div>
-                    <div class="pos-screen-cashbox__info">
-                      <input type="text" placeholder="">
-                    </div>
-                  </div>
+            <div class="news-feed-scroll-wrap">
+              <p class="marquee">
+                Welcome to our website! Enjoy the scrolling text feature we created for you! 🚀
+              </p>
+            </div>
+            <div class="pos-screen-main-wrap">
+              <div class="user-counter-wrap">
+                <!-- <img src="./img/logo.png" alt="logo" class="pos-inner-logo">
+                <p class="address">Adress: 16/29, Ajom road, Townhall, <br> Mohammadpur, Dhaka, Bangladesh.</p>
+                <p>User: Badal Halder</p>
+                <p>Counter: Counter Number-02</p> -->
+                <div class="item">
+                  <p class="left-p">Invoice Id:</p>
+                  <p>1205</p>
                 </div>
-                <!-- End Pos Field -->
-                <div class="pos-screen-cashbox__button">
-                  <button type="submit">Cash</button>
+                <div class="item">
+                  <p class="left-p">Customer:</p>
+                  <p>Badal Halder</p>
+                </div>
+                <div class="item">
+                  <p class="left-p">Reward Point:</p>
+                  <p>3400</p>
                 </div>
               </div>
-              <div class="pos-screen-cashbox__two">
-                <div class="pos-screen-cashbox__btn-group">
-                  <a class="pos-screen-cashbox__btn pos-screen-cashbox__btn__cancel" href="#">Cancel</a>
-                  <a class="pos-screen-cashbox__btn" href="#">Draft <img src="img/page-edit.svg"></a>
-                  <a class="pos-screen-cashbox__btn" href="#">Redeem point</a>
-                  <a class="pos-screen-cashbox__btn" href="#">Membership</a>
-                  <a class="pos-screen-cashbox__btn pos-screen-cashbox__btn-multiple" href="#">Multiple Pay</a>
+              <form class="pos-screen-checkout">
+                <div class="checkout-item">
+                  <label for="">Discount Type:</label>
+                  <div class="checkout-inner">
+                    <select id="dropdown" name="dropdown">
+                      <option value="item1">Fixed</option>
+                      <option value="item2">VAT @ 10%</option>
+                    </select>
+                    <input type="number" name="" id="" class="discount-input" placeholder="50.00">
+                  </div>
                 </div>
-              </div>
+                <div class="checkout-item">
+                  <label for="">Vat/Tax Type:</label>
+                  <div class="checkout-inner">
+                    <select id="dropdown" name="dropdown">
+                      <option value="item1">Fixed</option>
+                      <option value="item2">Percentage</option>
+                    </select>
+                    <input type="number" name="" id="" class="discount-input" placeholder="50.00">
+                  </div>
+                </div>
+                <div class="checkout-item">
+                  <label for="">Grand Total:</label>
+                  <input type="number" name="" id="" value="500" disabled class="input">
+                </div>
+                <div class="checkout-item">
+                  <label for="">Received:</label>
+                  <input type="number" placeholder="1500.00" class="receive-input">
+                </div>
+                <div class="checkout-item">
+                  <label for="">Change:</label>
+                  <input type="number" value="500" disabled class="input">
+                </div>
+                <div class="submit-btn-wrap">
+                  <button type="submit" class="stocky-login-submit-btn">Checkout</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -821,7 +790,10 @@
         <li><a href="#">Suspend F6</a></li>
         <li><a href="#">Cancle Ctrl+M</a></li>
       </ul>
-      <p>gggggggg</p>
+      <div class="pos-footer-wrap">
+        <a href="#"><img src="img/format-list-icon.svg"></a>
+        <p class="">Recent Invoice</p>
+      </div>
     </footer>
     <!-- footer code end -->
 
