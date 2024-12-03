@@ -32,9 +32,16 @@
       <div class="container">
         <div class="pos-header-content">
           <div class="dbdash-header__left">
-            <a href="index.html">
+            <a href="index.html" class="logo-link">
               <img class="header-logo" src="img/logo.png" alt="#">
             </a>
+            <button type="button" class="arrowBtn" id="arrowBtnHideShow">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.35296 11.9321V10.3439H18V11.9321H6.35296ZM6.35296 6.76016V5.17197H18V6.76016H6.35296ZM0 1.58821V0H18V1.58821H0Z"
+                    fill="#6F7185"></path>
+                </svg>
+            </button>
           </div>
 
           <div class="dbdash-header__right">
@@ -72,7 +79,7 @@
               </div>
 
               <div class="dbdash-header__single">
-                <a class="dbdash-header__blink" href="#">
+                <a class="dbdash-header__blink" href="#" id="cart">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M8.31328 11.4808C9.2763 11.4808 10.0972 11.1414 10.7759 10.4627C11.4547 9.7839 11.7941 8.96302 11.7941 8C11.7941 7.03698 11.4547 6.2161 10.7759 5.53734C10.0972 4.8586 9.2763 4.51923 8.31328 4.51923C8.06002 4.51923 7.81251 4.5463 7.57076 4.60043C7.32901 4.65458 7.09211 4.73339 6.86005 4.83685C7.48526 5.12651 7.98021 5.55522 8.3449 6.12296C8.70961 6.6907 8.89196 7.31637 8.89196 7.99996C8.89196 8.68357 8.70961 9.30925 8.3449 9.877C7.98021 10.4448 7.48526 10.8735 6.86005 11.1632C7.09211 11.2666 7.32901 11.3454 7.57076 11.3996C7.81251 11.4537 8.06002 11.4808 8.31328 11.4808ZM8 16L5.63144 13.6563H2.34372V10.3686L0 8L2.34372 5.63144V2.34372H5.63144L8 0L10.3686 2.34372H13.6563V5.63144L16 8L13.6563 10.3686V13.6563H10.3686L8 16ZM8 14.4105L9.88543 12.525H12.525V9.88543L14.4105 8L12.525 6.11457V3.47496H9.88543L8 1.58953L6.11457 3.47496H3.47496V6.11457L1.58953 8L3.47496 9.88543V12.525H6.11457L8 14.4105Z" />
@@ -256,8 +263,8 @@
     <!-- pos screen body code start -->
     <section class="pos-body-area">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
+        <div class="row pos-body-row">
+          <div class="col-md-3 hidden" id="col-3">
             <div class="pos-select-products">
               <div class="pos-select-products__info">
                 <div class="pos-select-products__group">
@@ -420,7 +427,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" id="col-5">
             <div class="rewards-info">
               <!-- Single Rewards -->
               <div class="rewards-info__single">
@@ -463,7 +470,7 @@
                       <option data-display="Scan barcode/Enter product name">Scan barcode/Enter product name</option>
                       <option value="Scan barcode/Enter product name">Search With Manually product name</option>
                     </select>
-                    <div class="nice-select" tabindex="0"><span class="current">Scan barcode/Enter product name</span>
+                    <div class="nice-select" tabindex="0"><span class="current">Enter product</span>
                       <ul class="list">
                         <li data-value="Scan barcode/Enter product name" data-display="Scan barcode/Enter product name"
                           class="option selected">Scan barcode/Enter product name</li>
@@ -692,7 +699,7 @@
                 </table>
                 <!-- End crancy Table -->
 
-                <div class="pos-screen-bottom">
+                <!-- <div class="pos-screen-bottom">
                   <div class="pos-screen-bottom__load">
                     <a href="#">Load More</a>
                   </div>
@@ -703,7 +710,7 @@
                       <li>Total: <span>14580 TK.</span></li>
                     </ul>
                   </div>
-                </div>
+                </div> -->
 
               </div>
             </div>
@@ -714,7 +721,7 @@
                 Welcome to our website! Enjoy the scrolling text feature we created for you! 🚀
               </p>
             </div>
-            <div class="pos-screen-main-wrap">
+            <div class="pos-screen-main-wrap" id="cart-wrap">
               <div class="user-counter-wrap">
                 <!-- <img src="./img/logo.png" alt="logo" class="pos-inner-logo">
                 <p class="address">Adress: 16/29, Ajom road, Townhall, <br> Mohammadpur, Dhaka, Bangladesh.</p>
@@ -776,7 +783,10 @@
       </div>
     </section>
     <!-- pos screen body code end -->
-
+    <section class="cart-wrap hidden">
+      <div>opened cart</div>
+      <button id="removeBtn">Remove</button>
+    </section>
     <!-- footer code start -->
     <footer class="pos-footer">
       <ul class="pos-footer-list">

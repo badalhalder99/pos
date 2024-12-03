@@ -285,3 +285,46 @@ singleCard.addEventListener('click', function () {
 
 
 // My name is Badal Halder::
+
+const toggleBtn = document.getElementById("arrowBtnHideShow");
+const col3 = document.getElementById("col-3");
+const col5 = document.getElementById("col-5");
+
+// Initial state setup
+col3.classList.add("hidden");
+col5.classList.replace("col-md-5", "col-md-8");
+
+toggleBtn.addEventListener("click", () => {
+  if (col3.classList.contains("hidden")) {
+    // Show col-md-3 and change col-md-8 to col-md-5
+    col3.classList.remove("hidden");
+    col5.classList.replace("col-md-8", "col-md-5");
+  } else {
+    // Hide col-md-3 and change col-md-5 to col-md-8
+    col3.classList.add("hidden");
+    col5.classList.replace("col-md-5", "col-md-8");
+  }
+});
+
+const cartBtn = document.getElementById("cart");
+const removeBtn = document.getElementById("removeBtn");
+const cartWrap = document.querySelector(".cart-wrap");
+
+cartBtn.addEventListener("click", () => {
+  if (cartWrap.classList.contains("open")) {
+    // Close the cart
+    cartWrap.classList.remove("open");
+    setTimeout(() => cartWrap.classList.add("hidden"), 300); // Wait for transition to finish
+  } else {
+    // Open the cart
+    cartWrap.classList.remove("hidden");
+    setTimeout(() => cartWrap.classList.add("open"), 10); // Delay to ensure the transition applies
+  }
+});
+
+removeBtn.addEventListener("click", () => {
+  cartWrap.classList.remove("open");
+  setTimeout(() => cartWrap.classList.add("hidden"), 300); // Wait for transition to finish
+});
+
+
