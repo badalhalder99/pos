@@ -135,7 +135,6 @@ body {
 
 .dbdash-smenu.dbdash-close .logo .dbdash-logo__main {
   display: none;
-
 }
 
 #dbdash-dark-light.active .dbdash-logo__main,
@@ -1708,7 +1707,7 @@ body {
 
   .dbdash-smenu .logo {
     margin: 0;
-    min-height: 80px;
+    min-height: 60px;
   }
 
   .admin-menu__two.mg-top-50,
@@ -9800,6 +9799,7 @@ ul.table-main-area__groups li a:hover {
   background: #fff;
   padding: 20px;
   border-radius: 3px;
+  position: relative;
 }
 .pos-inner-logo {
   width: 200px;
@@ -9966,6 +9966,22 @@ ul.table-main-area__groups li a:hover {
   .pos-screen-main-wrap {
     display: none;
   }
+  .pos-screen-main-wrap2 {
+    display: block;
+  }
+  .user-counter-wrap .item p {
+    font-size: 14px;
+  }
+  .pos-screen-checkout .checkout-item label {
+    font-size: 14px;
+  }
+  #removeBtn {
+    position: absolute;
+    top: 6px;
+    right: -145px;
+    background: transparent;
+    border: 0;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .rewards-info {
@@ -9981,17 +9997,26 @@ ul.table-main-area__groups li a:hover {
   .pos-screen-main-wrap {
     display: none;
   }
+  .pos-screen-main-wrap2 {
+    display: block;
+  }
+  .user-counter-wrap .item p {
+    font-size: 14px;
+  }
+  .pos-screen-checkout .checkout-item label {
+    font-size: 14px;
+  }
 }
 
 .cart-wrap {
   position: fixed;
   top: 0;
-  right: -200px;
+  right: -350px;
   /* Initially hidden off-screen */
   bottom: 0;
   height: 100vh;
-  width: 200px;
-  background: black;
+  width: 350px;
+  background: white;
   color: white;
   z-index: 5000000;
   transition: right 0.3s ease;
@@ -10007,7 +10032,62 @@ ul.table-main-area__groups li a:hover {
   display: none;
 }
 
-
-
-
-
+@media (min-width: 320px) and (max-width: 480px) {
+  .cart-wrap {
+    right: -280px;
+    width: 280px;
+  }
+  .item p.left-p {
+    text-align: left;
+  }
+  .checkout-item {
+    grid-template-columns: 1fr;
+  }
+  .pos-screen-checkout .checkout-item2 {
+    display: grid;
+    grid-template-columns: 90px auto !important;
+  }
+  .pos-screen-checkout .checkout-item3 {
+    display: grid;
+    grid-template-columns: 90px auto !important;
+    gap: 15px;
+  }
+  .checkout-item label {
+    text-align: left;
+  }
+  #removeBtn {
+    position: absolute;
+    top: 3px;
+    right: -117px;
+    background: transparent;
+    border: 0;
+  }
+}
+@media (min-width: 768px) {
+  .cart-wrap {
+    display: none;
+  }
+}
+@media (min-width: 1500px) {
+  .dbdash-smenu.dbdash-close {
+    width: 70px;
+  }
+  .logo .dbdash-logo .dbdash-logo__main {
+    max-width: 200px;
+  }
+}
+.sign-up-social-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 0px) and (max-width: 1278px) {
+  .dbdash-smenu.dbdash-close .admin-menu .logo .dbdash-logo .dbdash-logo__main {
+    display: block;
+  }
+  .dbdash-smenu.dbdash-close .admin-menu .logo .dbdash-logo .dbdash-logo__main--small{
+    display: none;
+  }
+}
+/* finish the project */

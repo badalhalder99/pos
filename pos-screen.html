@@ -783,9 +783,78 @@
       </div>
     </section>
     <!-- pos screen body code end -->
+
     <section class="cart-wrap hidden">
-      <div>opened cart</div>
-      <button id="removeBtn">Remove</button>
+      <div class="pos-screen-main-wrap pos-screen-main-wrap2" id="cart-wrap">
+        <div class="user-counter-wrap">
+          <!-- <img src="./img/logo.png" alt="logo" class="pos-inner-logo">
+                      <p class="address">Adress: 16/29, Ajom road, Townhall, <br> Mohammadpur, Dhaka, Bangladesh.</p>
+                      <p>User: Badal Halder</p>
+                      <p>Counter: Counter Number-02</p> -->
+          <div class="item">
+            <p class="left-p">Invoice Id:</p>
+            <p>1205</p>
+          </div>
+          <div class="item">
+            <p class="left-p">Customer:</p>
+            <p>Badal Halder</p>
+          </div>
+          <div class="item">
+            <p class="left-p">Reward Point:</p>
+            <p>3400</p>
+          </div>
+        </div>
+        <form class="pos-screen-checkout">
+          <div class="checkout-item">
+            <label for="">Discount Type:</label>
+            <div class="checkout-inner">
+              <select id="dropdown" name="dropdown" style="display: none;">
+                <option value="item1">Fixed</option>
+                <option value="item2">VAT @ 10%</option>
+              </select>
+              <div class="nice-select" tabindex="0"><span class="current">Fixed</span>
+                <ul class="list">
+                  <li data-value="item1" class="option selected">Fixed</li>
+                  <li data-value="item2" class="option">VAT @ 10%</li>
+                </ul>
+              </div>
+              <input type="number" name="" id="" class="discount-input" placeholder="50.00" fdprocessedid="czzjv">
+            </div>
+          </div>
+          <div class="checkout-item">
+            <label for="">Vat/Tax Type:</label>
+            <div class="checkout-inner">
+              <select id="dropdown" name="dropdown" style="display: none;">
+                <option value="item1">Fixed</option>
+                <option value="item2">Percentage</option>
+              </select>
+              <div class="nice-select" tabindex="0"><span class="current">Fixed</span>
+                <ul class="list">
+                  <li data-value="item1" class="option selected">Fixed</li>
+                  <li data-value="item2" class="option">Percentage</li>
+                </ul>
+              </div>
+              <input type="number" name="" id="" class="discount-input" placeholder="50.00" fdprocessedid="r3nsgk">
+            </div>
+          </div>
+          <div class="checkout-item checkout-item2">
+            <label for="">Grand Total:</label>
+            <input type="number" name="" id="" value="500" disabled="" class="input" fdprocessedid="xyrtgm">
+          </div>
+          <div class="checkout-item checkout-item3">
+            <label for="">Received:</label>
+            <input type="number" placeholder="1500.00" class="receive-input" fdprocessedid="wghil">
+          </div>
+          <div class="checkout-item checkout-item3">
+            <label for="">Change:</label>
+            <input type="number" value="500" disabled="" class="input" fdprocessedid="qmw5zd">
+          </div>
+          <div class="submit-btn-wrap">
+            <button type="submit" class="stocky-login-submit-btn" fdprocessedid="4zf0q">Checkout</button>
+          </div>
+        </form>
+        <button id="removeBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
     </section>
     <!-- footer code start -->
     <footer class="pos-footer">

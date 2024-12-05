@@ -592,7 +592,7 @@ textarea::-ms-input-placeholder{
 	border: none;
 	background: none;
 	backdrop-filter: inherit;
-	height: 75px;
+	height: 40px;
 }
 .close-icon{
 	display:block !important;
@@ -2867,7 +2867,7 @@ object {
 	display: block;
 }
 .logo .dbdash-logo .dbdash-logo__main {
-  max-width: 250px;
+  max-width: 180px;
 }
 
 
